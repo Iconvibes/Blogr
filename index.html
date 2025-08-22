@@ -33,11 +33,84 @@
     </style>
   </head>
   <body>
+    <header class="px-6 pt-10 pb-14 bg-center bg-no-repeat">
+      <!-- to do ====> navigation -->
+      <nav class="flex items-center justify-between">
+        <img src="./images/logo.svg" alt="logo">
 
-    Product Overview Pricing Marketplace Features Integrations Company About
-    Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up A modern
-    publishing platform Grow your audience and build your online brand Start for
-    Free Learn More Designed for the future Introducing an extensible editor
+        <!-- menu buttons -->
+        <div class="lg:hidden">
+          <!-- open menu button -->
+          <button><img src="./images/icon-hamburger.svg" alt="icon-hamburger"></button>
+          <!-- close menu button -->
+          <button class="hidden"><img src="./images/icon-close.svg" alt="icon-close"></button>
+        </div>
+        <!-- navigation links -->
+       <div class="hidden">
+         <ul>
+          <!-- product dropdown -->
+          <li>
+            <button><a href="#">Product</a><img src="./images/icon-arrow-dark.svg" alt="dropdown arrow"></button>
+            <!-- products dropdown links -->
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+
+          <!-- company dropdown -->
+          <li>
+            <button><a href="#">Company</a><img src="./images/icon-arrow-dark.svg" alt="dropdown arrow"></button>
+            <!-- company dropdown links -->
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+
+          <!-- connect dropdown -->
+          <li>
+            <button><a href="#">Connect</a><img src="./images/icon-arrow-dark.svg" alt="dropdown arrow"></button>
+            <!-- connect dropdown links -->
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+
+        </ul>
+       </div>
+
+       <!-- cta buttons -->
+        <div class="hidden">
+          <button>Login</button>
+          <button>Sign Up</button>
+        </div>
+      </nav>
+
+      <!-- header content -->
+      <section class="py-14 w-[90%] mx-auto font-Ubuntu">
+        <div class=" text-myWhite text-center">
+          <h1 class="text-[2.6rem] font-medium leading-[3.7rem]">A modern publishing platform</h1>
+          <p class="text-2xl mt-5 text-[#ffffffc9]">Grow your audience and build your online brand</p>
+        </div>
+        
+        <!-- CTAs -->
+         <div class="my-6 flex justify-around">
+          <button class="bg-myWhite text-Red500 text-lg font-bold p-4 rounded-full border-2 hover:border-myWhite hover:bg-Red500 hover:text-myWhite duration-1000"><a href="#">Start for Free</a></button>
+
+          <button class="bg-Red500 border-2 border-myWhite text-myWhite text-lg font-bold p-4 rounded-full hover:bg-myWhite hover:text-Red500 duration-1000">Learn More</button>
+         </div>
+
+      </section>
+    </header>
+    More Designed for the future Introducing an extensible editor
     Blogr features an exceedingly intuitive interface which lets you focus on
     one thing: creating content. The editor supports management of multiple
     blogs and allows easy manipulation of embeds such as images, videos, and
