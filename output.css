@@ -26,6 +26,7 @@
     --font-Overpass: Overpass, "sans-serif";
     --font-Ubuntu: Ubuntu, "Inter";
     --color-Red500: hsl(356, 100%, 66%);
+    --color-Blue900: hsl(208, 49%, 24%);
     --color-myWhite: hsl(0, 100%, 100%);
     --color-Gray600: hsl(207, 13%, 34%);
   }
@@ -188,6 +189,12 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
+  }
+  .my-12 {
+    margin-block: calc(var(--spacing) * 12);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -203,35 +210,11 @@
   .table {
     display: table;
   }
-  .w-\[\%\] {
-    width: %;
-  }
-  .w-\[9\%\] {
-    width: 9%;
-  }
-  .w-\[80\%\] {
-    width: 80%;
-  }
-  .w-\[80\] {
-    width: 80;
-  }
-  .w-\[85\%\] {
-    width: 85%;
-  }
-  .w-\[87\%\] {
-    width: 87%;
-  }
   .w-\[90\%\] {
     width: 90%;
   }
-  .w-\[92\%\] {
-    width: 92%;
-  }
-  .w-\[93\%\] {
-    width: 93%;
-  }
-  .w-\[95\%\] {
-    width: 95%;
+  .w-fit {
+    width: fit-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -242,9 +225,6 @@
   .resize {
     resize: both;
   }
-  .flex-col {
-    flex-direction: column;
-  }
   .items-center {
     align-items: center;
   }
@@ -253,9 +233,6 @@
   }
   .justify-between {
     justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -270,9 +247,6 @@
   }
   .border-myWhite {
     border-color: var(--color-myWhite);
-  }
-  .bg-Gray600 {
-    background-color: var(--color-Gray600);
   }
   .bg-Red500 {
     background-color: var(--color-Red500);
@@ -289,20 +263,14 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
-  }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
-  }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
+  }
+  .py-\[4rem\] {
+    padding-block: 4rem;
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -313,6 +281,9 @@
   .text-center {
     text-align: center;
   }
+  .font-Overpass {
+    font-family: var(--font-Overpass);
+  }
   .font-Ubuntu {
     font-family: var(--font-Ubuntu);
   }
@@ -320,87 +291,37 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
-  .text-\[2\.5rem\] {
-    font-size: 2.5rem;
-  }
   .text-\[2\.6rem\] {
     font-size: 2.6rem;
-  }
-  .text-\[2\.7rem\] {
-    font-size: 2.7rem;
-  }
-  .leading-\[2rem\] {
-    --tw-leading: 2rem;
-    line-height: 2rem;
-  }
-  .leading-\[3\.3rem\] {
-    --tw-leading: 3.3rem;
-    line-height: 3.3rem;
-  }
-  .leading-\[3\.5rem\] {
-    --tw-leading: 3.5rem;
-    line-height: 3.5rem;
   }
   .leading-\[3\.7rem\] {
     --tw-leading: 3.7rem;
     line-height: 3.7rem;
   }
-  .leading-\[3rem\] {
-    --tw-leading: 3rem;
-    line-height: 3rem;
-  }
-  .leading-\[5rem\] {
-    --tw-leading: 5rem;
-    line-height: 5rem;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .text-Gray600 {
-    color: var(--color-Gray600);
+  .text-Blue900 {
+    color: var(--color-Blue900);
   }
   .text-Red500 {
     color: var(--color-Red500);
   }
-  .text-\[\#ffffffbb\] {
-    color: #ffffffbb;
-  }
   .text-\[\#ffffffc9\] {
     color: #ffffffc9;
-  }
-  .text-\[\#ffffffd0\] {
-    color: #ffffffd0;
-  }
-  .text-\[\#ffffffe2\] {
-    color: #ffffffe2;
-  }
-  .text-\[white\] {
-    color: white;
   }
   .text-myWhite {
     color: var(--color-myWhite);
@@ -415,33 +336,9 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .duration-1 {
-    --tw-duration: 1ms;
-    transition-duration: 1ms;
-  }
-  .duration-5 {
-    --tw-duration: 5ms;
-    transition-duration: 5ms;
-  }
-  .duration-75 {
-    --tw-duration: 75ms;
-    transition-duration: 75ms;
-  }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
-  }
   .duration-1000 {
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
-  }
-  .hover\:border {
-    &:hover {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
   }
   .hover\:border-myWhite {
     &:hover {
