@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-Overpass: Overpass, "sans-serif";
+  --font-Ubuntu: Ubuntu, "Inter";
+  --color-Red500: hsl(356, 100%, 66%);
+  --color-Red400: hsl(355, 100%, 74%);
+  --color-Blue900: hsl(208, 49%, 24%);
+  --color-White: hsl(0, 100%, 100%);
+  --color-Gray600: hsl(207, 13%, 34%);
+  --color-Gray900: hsl(240, 10%, 16%);
+}
